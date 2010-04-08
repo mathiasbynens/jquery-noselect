@@ -6,7 +6,7 @@ As featured in [Uniform — Sexy forms with jQuery](http://pixelmatrixdesign.com
 
 ## Demo & Examples
 
-[http://mathiasbynens.be/examples/noselect](http://mathiasbynens.be/examples/noselect)
+[http://mathiasbynens.be/demo/noselect](http://mathiasbynens.be/demo/noselect)
 
 ## Example Usage
 
