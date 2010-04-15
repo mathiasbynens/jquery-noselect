@@ -12,7 +12,7 @@
    this.onselectstart = this.ondragstart = f; // Webkit & IE
    $(this)
     .mousedown(f) // Webkit & Opera
-    .css({ MozUserSelect: 'none' }); // Firefox
+    .css({ MozUserSelect: 'none', WebkitUserSelect: 'none', userSelect: 'none' });
   });
  };
 })(jQuery);
