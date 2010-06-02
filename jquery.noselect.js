@@ -8,7 +8,7 @@
   function f() {
    return false;
   };
-  return $(this).each(function() {
+  return this.each(function() {
    this.onselectstart = this.ondragstart = f; // Webkit & IE
    $(this)
     .mousedown(f) // Webkit & Opera
