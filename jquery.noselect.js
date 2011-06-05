@@ -1,18 +1,24 @@
 /*!
-* noSelect jQuery Plugin v1.0
-* @link http://github.com/mathiasbynens/noSelect-jQuery-Plugin
+* noSelect jQuery Plugin v1.0.1
+* @link http://mths.be/noselect
 * @author Mathias Bynens <http://mathiasbynens.be/>
 */
 jQuery.fn.noSelect = function() {
-	function f() {
+
+	// Since the string 'none' is used three times, storing it in a variable gives better results after minification
+	var none = 'none',
+	    f = function() {
+	    	return false;
+	    };
+
+	// onselectstart and ondragstart for WebKit & IE
+	// onmousedown for WebKit & Opera
+	return this.bind('selectstart dragstart mousedown', function() {
 		return false;
-	}
-	return this.each(function() {
-		// Since the string 'none' is used three times, storing it in a variable gives better results after minification
-		var none = 'none';
-		this.onselectstart = this.ondragstart = f; // WebKit & IE
-		jQuery(this)
-			.mousedown(f) // WebKit & Opera
-			.css({ MozUserSelect: none, WebkitUserSelect: none, userSelect: none });
+	}).css({
+		'MozUserSelect': none,
+		'WebkitUserSelect': none,
+		'userSelect': none
 	});
+
 };
