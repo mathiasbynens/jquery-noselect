@@ -1,8 +1,4 @@
-/*!
-* noSelect jQuery Plugin v1.0.2
-* @link http://mths.be/noselect
-* @author Mathias Bynens <http://mathiasbynens.be/>
-*/
+/*! http://mths.be/noselect v1.0.2 by @mathias */
 jQuery.fn.noSelect = function() {
 
 	// Since the string 'none' is used three times, storing it in a variable gives better results after minification
