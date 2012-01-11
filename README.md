@@ -10,7 +10,9 @@ As featured in [Uniform — Sexy forms with jQuery](http://pixelmatrixdesign.com
 
 ## Example Usage
 
-    $('p.with-click-handler').noSelect();
+```js
+$('p.with-click-handler').noSelect();
+```
 
 ## Notes
 
