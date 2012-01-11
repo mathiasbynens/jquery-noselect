@@ -1,4 +1,4 @@
-/*! http://mths.be/noselect v1.0.2 by @mathias */
+/*! http://mths.be/noselect v1.0.3 by @mathias */
 jQuery.fn.noSelect = function() {
 
 	// Since the string 'none' is used three times, storing it in a variable gives better results after minification
@@ -10,7 +10,8 @@ jQuery.fn.noSelect = function() {
 		return false;
 	}).css({
 		'MozUserSelect': none,
-		'WebkitUserSelect': none,
+		'msUserSelect': none,
+		'webkitUserSelect': none,
 		'userSelect': none
 	});
 
